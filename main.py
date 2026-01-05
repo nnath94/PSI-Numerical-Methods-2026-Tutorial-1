@@ -19,7 +19,7 @@ def myexp(x, N=10):
 
 if __name__ == "__main__":
 
-    print("Hello, world!")
+   # print("Hello, world!")
 
     print("e(1) with  5 terms is", myexp(1.0, 5))
     print("e(1) with 10 terms is", myexp(1.0, 10))
