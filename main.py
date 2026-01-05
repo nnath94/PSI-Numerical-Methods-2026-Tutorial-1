@@ -16,11 +16,22 @@ def myexp(x, N=10):
     # We're done!
     return y
 
+import numpy as np
+import matplotlib.pyplot as plt
 
 if __name__ == "__main__":
 
-   # print("Hello, world!")
+    print("Hello, world!")
 
+    A = np.linspace(0,2*np.pi,20);
+    B = np.sin(A);
+    C = np.cos(A);
+    print(np.exp(1.2));
+    plt.figure(1);
+    plt.plot(A,B,'b*',label='S');
+    plt.plot(A,C,'r*',label='C');
+    plt.legend();
+    plt.show();
     print("e(1) with  5 terms is", myexp(1.0, 5))
     print("e(1) with 10 terms is", myexp(1.0, 10))
     print("e(1) with 20 terms is", myexp(1.0, 20))
